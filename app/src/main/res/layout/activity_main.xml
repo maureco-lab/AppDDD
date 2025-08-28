@@ -10,34 +10,52 @@
 
     <ImageView
         android:id="@+id/imgDownload"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="-100dp"
+        android:layout_toRightOf="@id/imgOk"
         android:scaleType="centerCrop"
         android:src="@drawable/downloading" />
 
     <ImageView
-        android:layout_below="@id/imgDownload"
         android:id="@+id/imgEnter"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/imgDownload"
+        android:layout_marginLeft="60dp"
+        android:layout_marginBottom="-30dp"
         android:scaleType="centerCrop"
         android:src="@drawable/direction" />
 
     <ImageView
-        android:layout_below="@id/imgEnter"
         android:id="@+id/imgOk"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@id/imgEnter"
+        android:layout_marginLeft="150dp"
+        android:layout_marginRight="-15dp"
         android:scaleType="centerCrop"
         android:src="@drawable/ok" />
 
     <ImageView
-        android:layout_below="@id/imgOk"
         android:id="@+id/ImgUp"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/imgOk"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="-30dp"
         android:scaleType="centerCrop"
         android:src="@drawable/arrow" />
 
+    <ImageView
+        android:id="@+id/ImgClose"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/imgOk"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="-30dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/close" />
 
 </RelativeLayout>
