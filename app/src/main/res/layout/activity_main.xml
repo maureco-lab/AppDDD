@@ -1,30 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical|center_horizontal">
 
     <ImageView
         android:id="@+id/imgDownload"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginTop="200dp"
-        android:layout_marginBottom="-100dp"
-        android:layout_toRightOf="@id/imgOk"
         android:scaleType="centerCrop"
         android:src="@drawable/downloading" />
 
     <ImageView
         android:id="@+id/imgEnter"
+        android:layout_below="@id/imgDownload"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_below="@id/imgDownload"
-        android:layout_marginLeft="60dp"
-        android:layout_marginBottom="-30dp"
+        android:layout_toEndOf="@id/imgDownload"
         android:scaleType="centerCrop"
         android:src="@drawable/direction" />
 
@@ -33,8 +34,7 @@
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:layout_below="@id/imgEnter"
-        android:layout_marginLeft="150dp"
-        android:layout_marginRight="-15dp"
+        android:layout_toStartOf="@id/imgEnter"
         android:scaleType="centerCrop"
         android:src="@drawable/ok" />
 
@@ -42,9 +42,7 @@
         android:id="@+id/ImgUp"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_below="@id/imgOk"
-        android:layout_marginLeft="60dp"
-        android:layout_marginTop="-30dp"
+        android:layout_toEndOf="@id/imgEnter"
         android:scaleType="centerCrop"
         android:src="@drawable/arrow" />
 
@@ -52,10 +50,10 @@
         android:id="@+id/ImgClose"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_below="@id/imgOk"
-        android:layout_marginLeft="250dp"
-        android:layout_marginTop="-30dp"
+        android:layout_toRightOf="@id/imgEnter"
+        android:layout_toEndOf="@id/imgEnter"
+        android:layout_below="@id/imgEnter"
         android:scaleType="centerCrop"
         android:src="@drawable/close" />
-
 </RelativeLayout>
+</LinearLayout>
